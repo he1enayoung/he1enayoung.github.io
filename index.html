@@ -3,29 +3,14 @@ layout: default  # This refers to a file in your _layouts folder, e.g., _layouts
 title: Home
 ---
 
-<h1>{{ page.title }}</h1>
-<p>Welcome to my GitHub Pages site!</p>
+<!-- <h1>{{ page.title }}</h1>
+<p>Welcome to my GitHub Pages site!</p> -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.scss"> <!-- Link to your CSS file -->
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-    </header>   
-    <section class="projects">
-        <div class="project-item">
-            <a href="climber.html">
-                <img src="images/climber-thumbnail.png" alt="Climber Thumbnail">
-            </a>
-            <p>Project 1 Brief Description</p>
-        </div>
-        <!-- Add more projects as needed -->
-    </section>
-</body>
-</html>
+<section class="projects">
+    <div class="project-item">
+        <a href="{{ '/climber.html' | relative_url }}">
+            <img src="{{ '/assets/images/climber-thumbnail.png' | relative_url }}" alt="Climber Thumbnail">
+        </a>
+        <p>Project 1 Brief Description</p>
+    </div>
+</section>
