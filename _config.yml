@@ -1,6 +1,11 @@
 theme: jekyll-theme-minimal
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
+- jekyll-sass-converter
 
 title: Helena Young
 description: Helena Young's Portfolio
+
+sass:
+  sass_dir: assets/css   # Directory where your SCSS files are located
+  style: compressed      # Optional, defines output CSS style (compressed or expanded)
