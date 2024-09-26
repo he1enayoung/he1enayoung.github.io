@@ -25,3 +25,10 @@
     border-radius: 50%;  // Makes the image a circle
     object-fit: cover;  // Ensures the image fills the circle
   }  
+
+.title-project {
+    header {
+        padding: 10px;
+        white-space: nowrap;  // Prevents wrapping in the header
+    }
+}
