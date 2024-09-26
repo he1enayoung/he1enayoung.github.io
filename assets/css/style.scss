@@ -16,3 +16,9 @@
         margin-top: 20px;
     }
 }
+.circle-image {
+    width: 50%;  // Reduces the size to 50% of the original
+    height: auto;  // Maintains aspect ratio
+    border-radius: 50%;  // Makes the image a circle
+    object-fit: cover;  // Ensures the image fills the circle
+  }  
