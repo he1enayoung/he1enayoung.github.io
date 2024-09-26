@@ -6,7 +6,10 @@
 .project-item {
     margin-bottom: 20px;
 
-    header,
+    header {
+        padding: 10px;
+        white-space: nowrap;  // Prevents text from wrapping in headers
+    }
     div {
         padding: 10px;
     }
