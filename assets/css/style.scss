@@ -63,6 +63,12 @@
     }
 }
 
+.project-item p {
+    margin: 3px 0;  // Reduce the margin between the lines of the description
+    line-height: 1.2;  // Decrease the line height to tighten up the text spacing
+}
+
+
 // @import "jekyll-theme-minimal";
 
 // .project-item {
