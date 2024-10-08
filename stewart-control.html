@@ -14,12 +14,19 @@ title: Stewart Platform Control Project
     <div class="project-item">
         <div>
             <p>The basis of this project was the control of the Soft Stewart Platform (design of which is described in the previous project
-                description). This involved integration of the  vision system and camera through ROS, and using data gathered to create a
-                cascading PID controller 
+                description). This involved integration of the  vision system and camera through ROS, and using image data gathered to create a
+                cascading PID controller for shape tracing, and a LSTM neural network for mapping motor position to ball position 
+                over a time horizon. 
             </p>
         </div>
         <div>
             <img src="{{ '/images/vision_rviz.png' | relative_url }}" alt="Stewart Platform Project Full Image">
+        </div>
+        <div>
+            <p>This rviz screenshots illustrates the mapping of apriltag detections to a center projection for the top of the platform. 
+                Vector manipulation allows this center projection to be compared to a fixed center_bottom projection in order to measure relative tilt and position
+                of the platform in space. 
+            </p>
         </div>
         <div>
             <img src="{{ '/images/PID_N.png' | relative_url }}" alt="Stewart Platform Tilt">
