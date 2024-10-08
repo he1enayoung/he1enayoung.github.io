@@ -25,11 +25,23 @@ title: Stewart Platform Control Project
         <div>
             <p>This rviz screenshots illustrates the mapping of apriltag detections to a center projection for the top of the platform. 
                 Vector manipulation allows this center projection to be compared to a fixed center_bottom projection in order to measure relative tilt and position
-                of the platform in space. 
+                of the platform in space. You can also see a mapping of the ball into the platform coordinate frame, where its coordinates are 
+                represented relative to its center (at (0,0)).
             </p>
         </div>
         <div>
             <img src="{{ '/images/PID_N.png' | relative_url }}" alt="Stewart Platform Tilt">
+        </div>
+        <div>
+            <img src="{{ '/images/PID_Hello_World.png' | relative_url }}" alt="Stewart Platform Tilt">
+        </div>
+        <div>
+            <p> I developed a cascading PID controller to autonomously control the ball's position, enabling the generation of the images above. 
+                These images depict the ball moving across the platform, tracing predefined setpoints to form letters or words, such as a Northwestern 'N' 
+                or 'Hello World.' The controller consists of two nested feedback loops: one for velocity control and the other for position control. By 
+                mapping the motion of the rigid Stewart platform, the system calculates the necessary motor movements to align the ball's position and velocity 
+                with the target values.
+            </p>
         </div>
         <div>
             <img src="{{ '/images/NN_onestep.png' | relative_url }}" alt="Stewart Platform CAD">
@@ -38,7 +50,8 @@ title: Stewart Platform Control Project
             <img src="{{ '/images/NN_fivestep.png' | relative_url }}" alt="Stewart Platform CAD x2">
         </div>
         <div>
-            <p>Description of the Stewart Platform project. Detail the project here.</p>
+            <p> Eventual integration with an MPPI controller
+            </p>
         </div>
     </div>
 </section>
