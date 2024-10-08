@@ -50,7 +50,15 @@ title: Stewart Platform Control Project
             <img src="{{ '/images/NN_fivestep.png' | relative_url }}" alt="Stewart Platform CAD x2">
         </div>
         <div>
-            <p> Eventual integration with an MPPI controller
+            <p> In addition to the PID controller, I used the PyTorch library to design and train a Long Short-Term Memory (LSTM) neural network capable of 
+                predicting the ball's future position by mapping motor twist angles and current ball positions over a defined time horizon. The training process 
+                involved gathering control data by operating the platform manually over an extended period, during which I recorded measurements of both motor 
+                and ball positions. This rich dataset allowed the LSTM to learn complex temporal dependencies between the platform's motor inputs and the ball's movements.
+                The above images demonstrate the LSTM's ability to predict the y-coordinate of the ball's position. The top image illustrates a one-step-ahead prediction, 
+                showcasing the network's immediate response accuracy, while the bottom image highlights a more challenging prediction over a five-step horizon, reflecting 
+                the model's capacity to anticipate future states. Looking ahead, I intend to integrate this LSTM model into a Model Predictive Path Integral (MPPI) controller. 
+                This combination aims to enhance control accuracy and stability, with the potential to outperform the traditional PID controller in tasks requiring precise
+                setpoint tracing. 
             </p>
         </div>
     </div>
